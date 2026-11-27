@@ -1,55 +1,133 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KIVILCIM — Destek / Support</title>
-<meta name="description" content="KIVILCIM: aynaları çevirip ışığı kristallere ulaştırdığın bir bulmaca oyunu. Destek ve iletişim.">
-<style>
-  :root { --bg:#070a17; --panel:#121a3a; --text:#eaf2ff; --dim:#8a97c2; --cyan:#3ef2ff; --amber:#ffb547; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
-  h1 { font-size:32px; letter-spacing:.08em; margin:0 0 4px; }
-  .tag { color:var(--dim); margin:0 0 28px; }
-  h2 { color:var(--cyan); font-size:20px; margin:28px 0 8px; }
-  h3 { color:var(--amber); font-size:16px; margin:18px 0 4px; }
-  p { margin:0 0 12px; }
-  .card { background:var(--panel); border:1px solid rgba(155,107,255,.3); border-radius:18px; padding:8px 22px 18px; margin-top:16px; }
-  a { color:var(--cyan); }
-  nav a { margin-right:16px; }
-  footer { color:var(--dim); font-size:14px; margin-top:40px; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AKK Play Studio</title>
+  <meta name="description" content="AKK Play Studio bağımsız bir oyun stüdyosu. İlk oyunumuz Kıvılcım, ışık ve ayna bulmacası, yakında Android ve iOS'ta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Figtree:wght@400;500;700&family=Exo+2:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232B3AE0'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%23FFD23F'/%3E%3C/svg%3E">
 </head>
 <body>
-<main>
-  <h1>KIVILCIM</h1>
-  <p class="tag">Işık ve ayna bulmacası · Light and mirror puzzle — AKK PLAY GAMES</p>
-  <nav><a href="#tr">Türkçe</a><a href="#en">English</a><a href="privacy.html">Gizlilik / Privacy</a></nav>
+  <a class="skip" href="#oyunlar">İçeriğe geç</a>
 
-  <section id="tr" class="card">
-    <h2>Destek</h2>
-    <p>Bir sorun mu yaşıyorsun, bir fikrin mi var? Bize yaz:
-      <a href="mailto:contact.sinanakkaya@gmail.com">contact.sinanakkaya@gmail.com</a></p>
-    <p>Yazarken cihaz modelini, işletim sistemi sürümünü ve sorunun hangi bölümde olduğunu eklersen daha hızlı yardımcı oluruz.</p>
-    <h3>Sık sorulanlar</h3>
-    <p><strong>"Reklamları Kaldır" satın alımım görünmüyor.</strong> Oyunda <em>Reklamları Kaldır → Satın alımları geri yükle</em>'ye dokun. Satın alırken kullandığın Google veya Apple hesabıyla giriş yapmış olmalısın.</p>
-    <p><strong>İlerlememi nasıl korurum?</strong> İlerleme yalnızca cihazında saklanır. Uygulamayı silmek ilerlemeyi de siler.</p>
-    <p><strong>Reklam iznimi nasıl değiştiririm?</strong> Oyunda <em>Ayarlar → Gizlilik seçenekleri</em>. iPhone'da ayrıca iOS <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em>.</p>
-  </section>
+  <header class="top">
+    <a class="logo" href="#" aria-label="AKK Play Studio ana sayfa">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">AKK Play Studio</span>
+    </a>
+    <nav aria-label="Ana menü">
+      <a href="#oyunlar">Oyunlar</a>
+      <a href="#studyo">Stüdyo</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
 
-  <section id="en" class="card" lang="en">
-    <h2>Support</h2>
-    <p>Having a problem or an idea? Write to us:
-      <a href="mailto:contact.sinanakkaya@gmail.com">contact.sinanakkaya@gmail.com</a></p>
-    <p>Please include your device model, OS version and the level where it happened.</p>
-    <h3>FAQ</h3>
-    <p><strong>My Remove Ads purchase is missing.</strong> In the game tap <em>Remove Ads → Restore purchases</em>, signed in with the same Google or Apple account you bought it with.</p>
-    <p><strong>How is my progress saved?</strong> Progress is stored only on your device. Uninstalling the app deletes it.</p>
-    <p><strong>How do I change ad consent?</strong> In the game: <em>Settings → Privacy options</em>. On iPhone also iOS <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
-  </section>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="wordmark">
+        <span class="wm-line">AKK</span>
+        <span class="wm-line wm-play"><span class="wm-btn" aria-hidden="true"></span>Play</span>
+        <span class="wm-line wm-studio">Studio</span>
+      </h1>
+      <p class="hero-lede">Küçük bir ekip, büyük bir oyun sevgisi. Telefonunu açıp kendini kaptıracağın oyunlar yapıyoruz.</p>
+      <a class="hero-cta" href="#kivilcim">İlk oyunumuz Kıvılcım'ı incele</a>
+    </section>
 
-  <footer>© 2026 AKK PLAY GAMES · <a href="privacy.html">Gizlilik Politikası / Privacy Policy</a></footer>
-</main>
+    <section id="oyunlar" class="games" aria-labelledby="games-title">
+      <h2 id="games-title" class="section-title">Oyunlarımız</h2>
+
+      <article id="kivilcim" class="game" aria-labelledby="kivilcim-title">
+        <div class="game-inner">
+          <div class="game-body">
+            <div class="game-head">
+              <img class="game-icon" src="assets/kivilcim/icon.png" alt="" width="72" height="72">
+              <div>
+                <p class="game-status">Yakında Android ve iOS'ta</p>
+                <h3 id="kivilcim-title" class="game-title">Kıvılcım</h3>
+                <p class="game-genre">Işık ve ayna bulmacası</p>
+              </div>
+            </div>
+
+            <p class="game-lede">Tek bir ışık kıvılcımını karanlığın içinden geçir. Aynaları çevir, ışını duvarların etrafından sektir, renkli camlarla boya ve beyaz ışığı prizmalarla ayır — ta ki tüm kristaller parlayana kadar.</p>
+
+            <ul class="game-features">
+              <li>200 özenle hazırlanmış, hepsi çözülebilir bulmaca</li>
+              <li>Aynalar, duvarlar, renk filtreleri, prizmalar ve kilitli aynalar</li>
+              <li>En az hamleyle çöz, üç yıldızı topla</li>
+              <li>Geri alma ve ipucu var, can sistemi yok</li>
+              <li>Tamamen çevrimdışı oynanır, hesap ya da kayıt gerekmez</li>
+              <li>Türkçe ve İngilizce</li>
+            </ul>
+
+            <ul class="stores" data-game="kivilcim">
+              <li>
+                <a class="store" data-store="googlePlay" href="#">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3 13.4 12l-9.8 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1Zm11 8.5 2.6-2.6 3.4 2c.9.5.9 1.6 0 2.1l-3.4 2-2.6-2.6L15.8 12l-1.2-1.2ZM5 1.6l10.8 6.2-2.4 2.4L5 1.6Zm8.4 12.2 2.4 2.4L5 22.4l8.4-8.6Z"/></svg>
+                  <span class="store-text"><small>İndir</small>Google Play</span>
+                  <span class="store-soon">Yakında</span>
+                </a>
+              </li>
+              <li>
+                <a class="store" data-store="appStore" href="#">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.8-2.3c.9-1.3 1.2-2.5 1.2-2.6 0 0-2.4-.9-2.4-3.6ZM14.1 5.6c.6-.8 1.1-1.8 1-2.9-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2-.5 2.7-1.3Z"/></svg>
+                  <span class="store-text"><small>İndir</small>App Store</span>
+                  <span class="store-soon">Yakında</span>
+                </a>
+              </li>
+            </ul>
+
+            <p class="game-links"><a href="kivilcim-destek.html">Destek ve sık sorulanlar</a><a href="privacy.html">Gizlilik politikası</a></p>
+          </div>
+
+          <div class="shots" role="group" aria-label="Kıvılcım ekran görüntüleri">
+            <img src="assets/kivilcim/ekran-menu.png" alt="Kıvılcım ana menüsü" width="720" height="1055" loading="lazy">
+            <img src="assets/kivilcim/ekran-bolum.png" alt="22. bölüm: ayna ve duvarlarla dolu bir bulmaca tahtası" width="720" height="1055" loading="lazy">
+            <img src="assets/kivilcim/ekran-cozum.png" alt="38. bölüm çözüldü: prizmadan ayrılan ışınlar üç kristali yakıyor" width="720" height="1055" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+      <p class="more-games">Sıradaki oyunlarımız üzerinde çalışıyoruz. Duyurular burada ve sosyal medya hesaplarımızda olacak.</p>
+    </section>
+
+    <section id="studyo" class="studio" aria-labelledby="studio-title">
+      <h2 id="studio-title" class="section-title">Stüdyo</h2>
+      <div class="studio-grid">
+        <p class="studio-big">AKK Play Studio, oynaması kolay ama bırakması zor oyunlar yapan bağımsız bir stüdyo.</p>
+        <div class="studio-points">
+          <div>
+            <h3>Önce eğlence</h3>
+            <p>Her oyunu önce kendimiz için yapıyoruz. Bizi sıkan bir şey sizi de sıkar.</p>
+          </div>
+          <div>
+            <h3>Saygılı tasarım</h3>
+            <p>Oyuncunun zamanına ve cebine saygı duyan, adil oyunlar.</p>
+          </div>
+          <div>
+            <h3>Topluluğa açık</h3>
+            <p>Geri bildirimlerinizi okuyor, oyunlarımızı sizinle birlikte geliştiriyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="contact-title">Bir fikrin, sorunun ya da iş birliği teklifin mi var?</h2>
+      <a class="contact-mail" href="mailto:contact.sinanakkaya@gmail.com">contact.sinanakkaya@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year">2026</span> AKK Play Studio. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
